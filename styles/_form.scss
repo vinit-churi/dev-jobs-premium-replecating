@@ -46,6 +46,15 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    // transition: color 0.3s ease-in;
+    transition: 0.3s all ease-in-out;
+
+    &:hover,
+    &:focus {
+      transition: 0.3s all ease-in-out;
+      transform: scale(1.1);
+      background-color: hsl(235, 60%, 71%);
+    }
     &:focus {
       outline: 0;
       border: 0;
