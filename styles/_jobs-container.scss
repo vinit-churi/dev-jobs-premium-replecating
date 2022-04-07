@@ -1,0 +1,10 @@
+.displayed-job-container {
+  background-color: var(--gray--light);
+  min-height: calc(100vh - 90px);
+}
+
+.displayed-job-container.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

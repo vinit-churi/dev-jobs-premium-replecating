@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./main.js" defer></script>
+    <title>dev jobs | challenge</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">devJobs</div>
+        <div class="theme-switcher-container">
+          <input id="theme-switcher" type="checkbox" />
+          <label for="theme-switcher">
+            <i class="fa-solid fa-sun"></i>
+            <div class="move-space">
+              <div class="circle"></div>
+            </div>
+            <i class="fa-solid fa-moon"></i>
+          </label>
+          <div class="theme-visual"></div>
+        </div>
+      </nav>
+      <form class="job-search-filter">
+        <i class="fa-solid fa-magnifying-glass first-glass"></i>
+        <input type="text" placeholder="Filter by title..." data-job-search />
+        <i class="fa-solid fa-filter"></i>
+        <button type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+    </header>
+    <div class="displayed-job-container loading">
+      <div class="lds-roller">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <template id="job-card">
+      <img src="./images/insure.svg" alt="job logo image" />
+      <div class="job-time-and-type">
+        <span class="time" data-time-posted>5h ago</span
+        ><span class="job-type" data-job-type>Full Time</span>
+      </div>
+      <div class="job-position" data-job-position>IOS Engineer</div>
+      <div class="company-name" data-company-name></div>
+      <div class="job-location" data-job-location>United States</div>
+    </template>
+  </body>
+</html>

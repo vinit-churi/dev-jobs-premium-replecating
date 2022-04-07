@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --violet: hsl(235, 60%, 61%);
+  --violet--light: hsl(235, 82%, 77%);
+  --blue--dark: hsl(219, 29%, 14%);
+  --midnight: hsl(220, 29%, 10%);
+  --white: hsl(0, 0%, 100%);
+  --gray--light: hsl(210, 22%, 96%);
+  --gray: hsl(212, 23%, 69%);
+  --gray--dark: hsl(214, 17%, 51%);
+  --bg-main-color: #1f2029;
+  --toned-down-white: #f1f1f1;
+  --highlight-main: #8167a9;
+}
+
+body[data-theme="light"] {
+  --bg: var(--gray--light);
+  --main-base: var(--white);
+  --heading: var(--blue--dark);
+  --text--main: var(--gray--dark);
+  --company-site-btn: var(--violet);
+  --border: var(--white);
+  --spinner: black;
+  --back-to-top: hsla(219, 29%, 14%, 0.8);
+  --error: hsla(0, 100%, 50%, 0.8);
+  --shadowColor: 0, 0, 0, 0.3;
+  --box-shadow: 5px 5px 15px 0 rgba(var(--shadowColor));
+}
+
+body[data-theme="dark"] {
+  --bg: var(--midnight);
+  --main-base: var(--blue--dark);
+  --heading: var(--white);
+  --text--main: var(--gray--dark);
+  --company-site-btn: var(--white);
+  --border: var(--midnight);
+  --spinner: var(--violet);
+  --back-to-top: var(--violet);
+  --error: hsla(0, 100%, 50%, 0.4);
+  --shadowColor: 0, 0, 0, 1;
+  --box-shadow: 5px 5px 15px 0 rgba(var(--shadowColor));
+}
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  scroll-behavior: smooth;
+  font-size: 16px;
+  color: var(--text--main);
+}

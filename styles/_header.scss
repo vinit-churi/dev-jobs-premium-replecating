@@ -1,0 +1,84 @@
+header {
+  background-image: url("../images/bg-pattern-header-mobile.svg");
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  nav {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    max-width: 620px;
+    margin: 0 auto;
+
+    .theme-switcher-container {
+      position: relative;
+      display: flex;
+
+      input[type="checkbox"] {
+        position: absolute;
+        opacity: 0;
+      }
+      input[type="checkbox"]:checked ~ label > .move-space {
+        transition: 0.3s all ease-in-out;
+        background-color: var(--highlight-main);
+        // justify-content: flex-end;
+      }
+      input[type="checkbox"]:checked ~ label > .move-space > .circle {
+        transition: 0.3s all ease-in-out;
+        // background-color: red;
+        // justify-content: flex-end;
+        // left: auto;
+        // right: 3px;
+        background-color: var(--toned-down-white);
+        transform: translateX(40px);
+      }
+      label {
+        display: flex;
+        align-items: center;
+        width: 130px;
+        height: 28px;
+        // background-color: red;
+        gap: 8px;
+
+        .move-space {
+          width: 100%;
+          background-color: var(--bg-main-color);
+          height: 100%;
+          border-radius: 35px;
+          //   display: flex;
+          //   align-items: center;
+          padding: 0 3px;
+          //   justify-content: flex-start;
+          position: relative;
+          transition: 0.3s all ease-in-out;
+          .circle {
+            transition: 0.3s all ease-in-out;
+            position: absolute;
+            top: 4px;
+            left: 3px;
+            // transform: translateY(-9px);
+            height: 20px;
+            border-radius: 50%;
+            width: 20px;
+            background-color: var(--highlight-main);
+          }
+        }
+
+        .fa-solid {
+          color: whitesmoke;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+  //   padding: 0 ;
+  .logo {
+    font-weight: 700;
+    font-size: 2rem;
+    color: aliceblue;
+  }
+}
